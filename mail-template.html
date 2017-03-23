@@ -29,23 +29,49 @@
           }
           .title-1{
             text-align: center;
-            font-size: 40px;
+            font-size: 45px;
+            font-family: "roboto condensed";
           }
           .title-2{
+            font-family: "roboto condensed";
             font-size: 30px;
-            color: #99CC33;
+            color: #67B43A;
           }
           .courses{
             padding: 10px;
             margin-top: 20px;
-            background-color: #f2f2f2;
+            background-color: #fcfcfc;
+            border-left: 5px solid #f3f3f3;
+            border-bottom: 5px solid #f3f3f3;
           }
           .course-detail{
             font-size: 14px;
             font-weight: 600;
           }
-          .course-detail td{
+          .course-detail td,
+          .course-description{
             padding-bottom: 10px;
+          }
+          .more-info{
+            background-color: #67B43A;
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 5px;
+            color: #fff;
+            text-decoration: none;
+            font-family: "roboto condensed";
+            font-size: 17px;
+          }
+          @media (max-width: 600px) {
+            .content{
+              padding-top: 0;
+            }
+          }
+          @media (max-width: 480px) {
+            .title-img{
+              width: 100%;
+            }
           }
         </style>
     </head>
@@ -55,7 +81,7 @@
             <tr>
                 <td>
                     <![endif]-->
-        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <table border="0" cellpadding="0" cellspacing="0">
             <tr>
                 <td>
                     <table bgcolor="#ffffff" class="content" align="center" cellpadding="0" cellspacing="0" border="0">
@@ -63,13 +89,18 @@
                           <tr>
                               <td class="header">
                                 <a href="https://university.10pines.com" target="_blank">
-                                  <img src="imagenes/header.png" alt="header y link a university.com">
+                                  <img src="header.png" alt="header y link a university.com" width="100%">
                                 </a>
                               </td>
                           </tr>
                           <tr>
                               <td class="main-content">
                                   <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                      <td align="center">
+                                        <img src="img-marzo.png" alt="marzo 2017" class="title-img">
+                                      </td>
+                                    </tr>
                                     <tr>
                                       <td class="title-1">
                                         Pr&oacuteximos cursos
@@ -79,7 +110,7 @@
                                       <td>
                                         <table class="courses">
                                           <tr>
-                                            <td class="title-2">Nombre del curso</td>
+                                            <td class="title-2">Construcci&oacuten de software robusto con TDD</td>
                                           </tr>
                                           <tr class="course-detail">
                                             <td>
@@ -88,27 +119,49 @@
                                           </tr>
                                           <tr>
                                             <td class="course-description">
-                                              ¿Estás cansado de tener que estar emparchando tu código todo el tiempo?
-                                              ¿Querés tirar el sistema en el que trabajás a la basura porque es inmantenible e inmanejable?
-                                              ¿Te gustaría estar seguro de que los cambios que hiciste no generarán errores?
-                                              ¿Te gustaría poder mejorar el diseño de tu sistema sin tener que rezar para no introducir bugs?</br>
-                                              <b>¡Entonces este curso es para vos</b>
+                                                ¿Estás cansado de tener que estar emparchando tu código todo el tiempo?
+                                                ¿Querés tirar el sistema en el que trabajás a la basura porque es inmantenible e inmanejable?
+                                                ¿Te gustaría estar seguro de que los cambios que hiciste no generarán errores?
+                                                ¿Te gustaría poder mejorar el diseño de tu sistema sin tener que rezar para no introducir bugs?</br>
+                                                <b>¡Entonces este curso es para vos</b>
+                                              </td>
+                                            </tr>
+                                            <tr class="course-action">
+                                              <td>
+                                                <a class="more-info" href="https://university.10pines.com/courses/47-construccion-de-software-robusto-con-tdd" target="_blank"> Ver m&aacutes </a>
+                                              </td>
+                                            </tr>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table class="courses">
+                                          <tr>
+                                            <td class="title-2">Diseño avanzado de software con objetos I</td>
+                                          </tr>
+                                          <tr class="course-detail">
+                                            <td>
+                                              <i class="fa fa-calendar-o" aria-hidden="true"></i> Del 27/03 al 03/04
                                             </td>
                                           </tr>
-                                          <tr class="course-teacher">
-                                            <td>
-                                              <table>
-                                                <tr>
-                                                  <td class="teacher-avatar" width="75px">
-                                                    <img src="imagenes/maximo.png" width="100%">
-                                                  </td>
-                                                  <td class="teacher-name">
-                                                    Este curso es dictado por: </br>
-                                                    <b>M&aacuteximo Prieto</b>
-                                                  </td>
-                                                </tr>
-                                              </table>
-                                            </td>
+                                          <tr>
+                                            <td class="course-description">
+                                              ¿Viste objetos en la facultad, sabes programar en Java, C# u otro lenguaje pero sentís que te falta aprender algo más?
+                                              ¿Alguna vez te preguntaste cómo surgió el paradigma de objetos, qué bases teóricas lo sustentan, cómo se compara con el paradigma funcional y cuáles son sus ventajas y desventajas?
+                                              ¿Te cuesta ponerle buenos nombres a las clases, y te preguntás por qué el paradigma se llama orientado a objetos cuando lo único que parece que escribís son clases?
+                                              ¿Te cuestionaste por qué te cuesta tanto mantener los sistemas que desarrollas? ¿Por qué dicen que desarrollar con Ruby es más fácil que con Java pero con Java es más 'seguro' que con Ruby?
+                                              ¿Tenés dudas sobre qué decisión de diseño es mejor, sabes que tenés que buscar mínimo acoplamiento y máxima cohesión pero no estás seguro qué significa en términos de objetos?
+                                              ¿Te preguntaste cómo afectan tus diseños los lenguajes estáticamente tipados y dinámicamente tipados? o ¿por qué JavaScript no utiliza clases o qué es un closure? Si alguna vez te hiciste alguna de estas preguntas,<br>
+                                              <b> ¡entonces este curso es para vos!</b>
+                                              </td>
+                                            </tr>
+                                            <tr class="course-action">
+                                              <td>
+                                                <a class="more-info" href="https://university.10pines.com/courses/46-diseno-avanzado-de-software-con-objetos-i" target="_blank"> Ver m&aacutes </a>
+                                              </td>
+                                            </tr>
                                           </tr>
                                         </table>
                                       </td>
@@ -122,7 +175,7 @@
                                   <tr>
                                     <td>
                                       <a href="https://www.10pines.com" target="_blank">
-                                        <img src="imagenes/footer-logo.png" alt="header y link a university.com">
+                                        <img src="footer-logo.png" alt="header y link a university.com">
                                       </a>
                                     </td>
                                   </tr>
